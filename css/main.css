@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.wrapper {
+  max-width: 700px;
+  padding: 1em 2em;
+  margin: auto;
+}
+
+.active {
+  display: block;
+}
+
+.header {
+  background: #ff8f70;
+  background: linear-gradient(93deg, #ff8f70 0%, #ff3d54 60%, #ff3d54 100%);
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu-img {
+  display: none;
+}
+
+.nav--desktop {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */

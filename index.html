@@ -5,93 +5,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <img src="" alt="">
-    <nav class="nav__mobile">
-      <ul>
-        <li>Product</li>
-        <ul>
-          <li> Overview</li>
-          <li> Pricing</li>
-          <li> Marketplace</li>
-          <li> Features</li>
-          <li> Integrations</li>
-        </ul>
-        <li> Company</li>
-        <ul>
-          <li> About</li>
-          <li> Team</li>
-          <li> Blog</li>
-        </ul>
-        <li> Careers</li>
-        <ul>
-          <li> Connect</li>
 
-          <li> Contact</li>
-          <li> Newsletter</li>
-          <li> LinkedIn</li>
-        </ul>
-
-      </ul>
-      <button> Login</button>
-      <button> Sign Up</button>
-    </nav>
-    <nav class="nav__desktop">
-      <ul>
-        <li>Product</li>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__container">
+        <img class="header__logo" src="images/logo.svg" alt="logo firmy">
+        <img class="header__menu-img active" src="./images/icon-hamburger.svg" alt="ikona menu otworz">
+        <img class="header__menu-img" src="./images/icon-close.svg" alt="ikona menu zamknij">
+      </div>
+      <nav class="nav nav--mobile">
         <ul>
-          <li> Overview</li>
-          <li> Pricing</li>
-          <li> Marketplace</li>
-          <li> Features</li>
-          <li> Integrations</li>
-        </ul>
-        <li> Company</li>
-        <ul>
-          <li> About</li>
-          <li> Team</li>
-          <li> Blog</li>
-        </ul>
-        <li> Careers</li>
-        <ul>
-          <li> Connect</li>
+          <li>
+            <h2 class="nav__item">Product</h2>
+            <ul class="nav__dropdown-list">
+              <li class="nav__item"> Overview</li>
+              <li class="nav__item"> Pricing</li>
+              <li class="nav__item"> Marketplace</li>
+              <li class="nav__item"> Features</li>
+              <li class="nav__item"> Integrations</li>
+            </ul>
+          </li>
 
-          <li> Contact</li>
-          <li> Newsletter</li>
-          <li> LinkedIn</li>
+          <li>
+            <h2 class="nav__item"> Company</h2>
+            <ul class="nav__dropdown-list">
+              <li class="nav__item"> About</li>
+              <li class="nav__item"> Team</li>
+              <li class="nav__item"> Blog</li>
+            </ul>
+          </li>
+
+          <li>
+            <h2 class="nav__item">Careers</h2>
+            <ul class="nav__dropdown-list">
+              <li class="nav__item"> Connect</li>
+
+              <li class="nav__item"> Contact</li>
+              <li class="nav__item"> Newsletter</li>
+              <li class="nav__item"> LinkedIn</li>
+            </ul>
+          </li>
+
+
         </ul>
+        <button> Login</button>
+        <button> Sign Up</button>
+      </nav>
+      <nav class="nav nav--desktop">
+        <ul class="nav__list">
+          <li>
+            <h2 class="nav__item">Product</h2>
+            <ul class="nav__dropdown-list">
+              <li class="nav__item"> Overview</li>
+              <li class="nav__item"> Pricing</li>
+              <li class="nav__item"> Marketplace</li>
+              <li class="nav__item"> Features</li>
+              <li class="nav__item"> Integrations</li>
+            </ul>
+          </li>
 
-      </ul>
-      <button> Login</button>
-      <button> Sign Up</button>
-    </nav>
+          <li>
+            <h2 class="nav__item">Company</h2>
+            <ul class="nav__dropdown-list">
+              <li class="nav__item"> About</li>
+              <li class="nav__item"> Team</li>
+              <li class="nav__item"> Blog</li>
+            </ul>
+          </li>
 
-    <div>
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-      <button>Start for Free</button>
-      <button>Learn More</button>
+          <li>
+            <h2 class="nav__item">Careers</h2>
+            <ul class="nav__dropdown-list">
+              <li class="nav__item"> Connect</li>
+
+              <li class="nav__item"> Contact</li>
+              <li class="nav__item"> Newsletter</li>
+              <li class="nav__item"> LinkedIn</li>
+            </ul>
+          </li>
+
+
+        </ul>
+        <button> Login</button>
+        <button> Sign Up</button>
+      </nav>
+
+      <div>
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <button>Start for Free</button>
+        <button>Learn More</button>
+      </div>
     </div>
   </header>
+
   <main>
     <article>
       <h2> Designed for the future</h2>
@@ -163,7 +181,7 @@
     </div>
   </footer>
 
-
+  </div>
 </body>
 
 </html>

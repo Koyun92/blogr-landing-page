@@ -1,0 +1,40 @@
+@import '_reset.scss';
+@import '_variables.scss';
+// font-family: 'Overpass', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+body{
+    background-color: $White;
+
+}
+.wrapper{
+    max-width: 700px;
+    padding: 1em 2em;
+    margin: auto;
+}
+.active{
+    display: block;
+
+}
+.header{
+   
+    background: rgb(255,143,112);
+    background: linear-gradient(93deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 60%, rgba(255,61,84,1) 100%); 
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between  ;
+    }
+    &__menu-img{
+        display:none;
+    }
+}
+
+.nav{
+    &--desktop{
+        display: none;
+    }
+}
+.active{
+    display: block;
+
+}
