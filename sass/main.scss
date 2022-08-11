@@ -33,8 +33,19 @@ body{
         align-items: center;
         justify-content: space-between  ;
     }
-    &__menu-img{
+  
+    &__icon-close{
+        
         display:none;
+        &--active{
+            display: block;
+        }
+    }
+    &__icon-open{
+        display:none;
+        &--active{
+            display: block;
+        }
     }
 }
 
@@ -42,8 +53,22 @@ body{
     &--desktop{
         display: none;
     }
-
+    &__main-element{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__dropdown-list{
+        height: 0;
+        overflow: hidden;
+        transition: .3s;
+        &--active{
+            height: fit-content;
+        }
+    }
 }
+
+
 .nav-mobile{
     &__list{
         position: absolute;
@@ -61,8 +86,10 @@ body{
         background-color: #fff;
         border-radius: .5rem;
 
+     
     }
 }
+ 
 .active{
     display: block;
 

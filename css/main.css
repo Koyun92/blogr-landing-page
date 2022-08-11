@@ -57,12 +57,49 @@ body {
           justify-content: space-between;
 }
 
-.header__menu-img {
+.header__icon-close {
   display: none;
+}
+
+.header__icon-close--active {
+  display: block;
+}
+
+.header__icon-open {
+  display: none;
+}
+
+.header__icon-open--active {
+  display: block;
 }
 
 .nav--desktop {
   display: none;
+}
+
+.nav__main-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__dropdown-list {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav__dropdown-list--active {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .nav-mobile__list {
