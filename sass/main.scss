@@ -23,6 +23,11 @@ body{
     list-style: none;
         
 }
+.button{
+    background: none;
+    border: none;
+    font-weight: 700;   
+}
 .header{
     height: 70vh;
     padding: 1em 2em;
@@ -48,6 +53,12 @@ body{
 .nav{
     &--desktop{
         display: none;
+    }
+    &__button{
+        background: rgb(255,143,112);
+        background: linear-gradient(93deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 60%, rgba(255,61,84,1) 100%); 
+        color: $White;
+        border-radius: 2em;
     }
     &__icon{
         margin-left: .5em;
@@ -96,6 +107,7 @@ body{
         text-align: center;
         padding: 2em ;
         background-color: #fff;
+        color: $Very-dark-black-blue;
         border-radius: .5rem;
         &--flex{
             display: flex;
@@ -104,16 +116,21 @@ body{
     }
     &__container{
         display: flex;
+        align-self: stretch;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 1em 0;
+        padding: .5em 1em;
+        border-top: $Grayish-blue 1px solid;
         
     }
     &__button{
-        background: none;
-        border: none;
-        font-weight: 700;   
+        cursor: pointer;
+        padding: .5em 1em;
+        margin: 1em 0;
     }
+  
 }
  
 .active{
