@@ -34,18 +34,14 @@ body{
         justify-content: space-between  ;
     }
   
-    &__icon-close{
+    &__burger-icon{
         
         display:none;
-        &--active{
-            display: block;
-        }
+   
     }
     &__icon-open{
         display:none;
-        &--active{
-            display: block;
-        }
+    
     }
 }
 
@@ -53,10 +49,26 @@ body{
     &--desktop{
         display: none;
     }
-    &__main-element{
+    &__icon{
+        margin-left: .5em;
+        transition: .3s;
+        &--rotate{
+            transform: rotate(180deg);
+        }
+    }
+    &__dropdown-button{
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color:transparent;
+        border: none;
+        margin: auto;
+        font-family: 'Overpass', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: .5em 1em;
+      
+      
     }
     &__dropdown-list{
         height: 0;
@@ -71,13 +83,13 @@ body{
 
 .nav-mobile{
     &__list{
+        display: none;
         position: absolute;
-        top: 10vh;
+        top:5rem;
         left:0;
         right: 0;
         max-width: 700px;
         width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -85,8 +97,22 @@ body{
         padding: 2em ;
         background-color: #fff;
         border-radius: .5rem;
-
+        &--flex{
+            display: flex;
+        }
      
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    &__button{
+        background: none;
+        border: none;
+        font-weight: 700;   
     }
 }
  

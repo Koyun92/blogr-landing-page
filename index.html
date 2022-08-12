@@ -21,14 +21,15 @@
     <div class="wrapper wrapper--relative">
       <div class="header__container">
         <img class="header__logo" src="images/logo.svg" alt="logo firmy">
-        <img class="header__icon-open active  " src="./images/icon-hamburger.svg" alt="ikona menu otworz">
-        <img class="header__icon-close  " src="./images/icon-close.svg" alt="ikona menu zamknij">
+        <img class="header__burger-icon active  " src="./images/icon-hamburger.svg" alt="ikona menu otworz">
+        <img class="header__burger-icon " src="./images/icon-close.svg" alt="ikona menu zamknij">
       </div>
-      <nav class="nav-mobile ">
+      <nav class="nav-mobile">
         <ul class="nav-mobile__list list ">
-          <li>
-            <h2 class="nav__main-element">Product <img class="nav__icon" src=" ./images/icon-arrow-dark.svg" alt="">
-            </h2>
+          <li class="nav-mobile__item">
+            <button class="nav__dropdown-button"> Product <img class="nav__icon" src="./images/icon-arrow-dark.svg"
+                alt=""></button>
+            </button>
             <ul class="nav__dropdown-list list">
               <li class="nav__sub-item"> Overview</li>
               <li class="nav__sub-item"> Pricing</li>
@@ -38,8 +39,9 @@
             </ul>
           </li>
 
-          <li>
-            <h2 class="nav__main-element"> Company <img src="./images/icon-arrow-dark.svg" alt=""></h2>
+          <li class="nav-mobile__item">
+            <button class="nav__dropdown-button"> Company <img class="nav__icon" src="./images/icon-arrow-dark.svg"
+                alt=""></button>
             <ul class="nav__dropdown-list list">
               <li class="nav__sub-item"> About</li>
               <li class="nav__sub-item"> Team</li>
@@ -47,8 +49,9 @@
             </ul>
           </li>
 
-          <li>
-            <h2 class="nav__main-element">Careers <img src="./images/icon-arrow-dark.svg" alt=""></h2>
+          <li class="nav-mobile__item">
+            <button class="nav__dropdown-button">Careers <img class="nav__icon" src="./images/icon-arrow-dark.svg"
+                alt=""></button>
             <ul class="nav__dropdown-list list">
               <li class="nav__sub-item"> Connect</li>
 
@@ -57,9 +60,9 @@
               <li class="nav__sub-item"> LinkedIn</li>
             </ul>
           </li>
-          <li>
-            <button> Login</button>
-            <button> Sign Up</button>
+          <li class="nav-mobile__container">
+            <button class="nav-mobile__button"> Login</button>
+            <button class="nav-mobile__button"> Sign Up</button>
           </li>
 
 

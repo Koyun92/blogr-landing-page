@@ -57,27 +57,30 @@ body {
           justify-content: space-between;
 }
 
-.header__icon-close {
+.header__burger-icon {
   display: none;
-}
-
-.header__icon-close--active {
-  display: block;
 }
 
 .header__icon-open {
   display: none;
 }
 
-.header__icon-open--active {
-  display: block;
-}
-
 .nav--desktop {
   display: none;
 }
 
-.nav__main-element {
+.nav__icon {
+  margin-left: .5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav__icon--rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.nav__dropdown-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +90,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin: auto;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: .5em 1em;
 }
 
 .nav__dropdown-list {
@@ -103,15 +113,13 @@ body {
 }
 
 .nav-mobile__list {
+  display: none;
   position: absolute;
-  top: 10vh;
+  top: 5rem;
   left: 0;
   right: 0;
   max-width: 700px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -126,6 +134,34 @@ body {
   padding: 2em;
   background-color: #fff;
   border-radius: .5rem;
+}
+
+.nav-mobile__list--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-mobile__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-mobile__button {
+  background: none;
+  border: none;
+  font-weight: 700;
 }
 
 .active {
