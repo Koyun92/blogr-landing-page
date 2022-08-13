@@ -83,11 +83,17 @@ body{
     }
     &__dropdown-list{
         height: 0;
+        border-radius: 1rem;
+        width: 100%;
         overflow: hidden;
         transition: .3s;
+        background-color: $Grayish-blue-light;
         &--active{
             height: fit-content;
         }
+    }
+    &__sub-item{
+        margin:1em 0;
     }
 }
 
@@ -124,6 +130,9 @@ body{
         padding: .5em 1em;
         border-top: $Grayish-blue 1px solid;
         
+    }
+    &__item{
+        width: 100%;
     }
     &__button{
         cursor: pointer;
