@@ -53,9 +53,11 @@ body {
 
 .header {
   height: 70vh;
+  min-height: 500px;
   padding: 1em 2em;
   background: #ff8f70;
   background: linear-gradient(93deg, #ff8f70 0%, #ff3d54 60%, #ff3d54 100%);
+  border-bottom-left-radius: 8rem;
 }
 
 .header__container {
@@ -73,10 +75,6 @@ body {
 
 .header__burger-icon {
   padding: 1em 0 1em 2em;
-  display: none;
-}
-
-.header__icon-open {
   display: none;
 }
 
@@ -104,14 +102,15 @@ body {
 .header__button {
   margin: 0 .5em;
   color: white;
-  background-color: rgba(232, 232, 232, 0.315);
+  border: 1px solid white;
+  background-color: transparent;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .header__button:hover {
   background-color: white;
-  color: #4b5862;
+  color: #ff3d54;
 }
 
 .nav--desktop {
@@ -247,5 +246,17 @@ body {
 
 .active {
   display: block;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .header__burger-icon {
+    display: none;
+  }
+  .nav-mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
