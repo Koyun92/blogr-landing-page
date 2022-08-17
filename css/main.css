@@ -74,7 +74,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px;
+  height: 8rem;
 }
 
 .header__burger-icon {
@@ -256,10 +256,14 @@ body {
   .nav-dropdown-button {
     font-size: 1.5rem;
     padding: 0 1em;
+    cursor: pointer;
   }
   .nav-dropdown-list {
     position: absolute;
-    top: 4rem;
+    top: 100%;
+  }
+  .nav-dropdown-list:hover {
+    height: auto;
   }
   .wrapper {
     max-width: 1200px;
@@ -277,6 +281,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,13 +294,31 @@ body {
     margin-left: 6em;
   }
   .nav-desktop__list {
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
   }
   .nav-desktop__item {
     width: auto;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .nav-desktop__item:hover ul {
+    height: auto;
+  }
+  .nav-desktop__item:hover button {
+    text-decoration: underline;
   }
   .nav-desktop__dropdown-list {
     width: auto;
