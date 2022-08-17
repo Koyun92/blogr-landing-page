@@ -24,84 +24,91 @@
         <img class="header__burger-icon active  " src="./images/icon-hamburger.svg" alt="ikona menu otworz">
         <img class="header__burger-icon " src="./images/icon-close.svg" alt="ikona menu zamknij">
         <nav class="nav nav-desktop">
-          <ul class="nav__list">
-            <li>
-              <h2 class="nav__item">Product</h2>
-              <ul class="nav__dropdown-button">
-                <li class="nav__sub-item"> Overview</li>
-                <li class="nav__sub-item"> Pricing</li>
-                <li class="nav__sub-item"> Marketplace</li>
-                <li class="nav__sub-item"> Features</li>
-                <li class="nav__sub-item"> Integrations</li>
+          <ul class="nav-list nav-desktop__list list">
+
+            <li class="nav-desktop__item">
+              <button class=" nav-dropdown-button button--white">
+                Product <img class="nav-icon" src="./images/icon-arrow-light.svg" alt=""></button>
+              <ul class="nav-dropdown-list nav-desktop__dropdown-list  list">
+                <li class="nav-sub-item"> Overview</li>
+                <li class="nav-sub-item"> Pricing</li>
+                <li class="nav-sub-item"> Marketplace</li>
+                <li class="nav-sub-item"> Features</li>
+                <li class="nav-sub-item"> Integrations</li>
               </ul>
             </li>
 
-            <li>
-              <h2 class="nav__item">Company</h2>
-              <ul class="nav__dropdown-list">
-                <li class="nav__sub-item"> About</li>
-                <li class="nav__sub-item"> Team</li>
-                <li class="nav__sub-item"> Blog</li>
+            <li class="nav-desktop__item">
+              <button class="nav-item nav-dropdown-button button--white">
+                Company <img class="nav-icon" src="./images/icon-arrow-light.svg" alt=""></button>
+              <ul class="nav-dropdown-list nav-desktop__dropdown-list  list">
+                <li class="nav-sub-item"> About</li>
+                <li class="nav-sub-item"> Team</li>
+                <li class="nav-sub-item"> Blog</li>
+              </ul>
+            </li>
+            <li class="nav-desktop__item">
+              <button class="nav-item nav-dropdown-button button--white">
+                Careers <img class="nav-icon" src="./images/icon-arrow-light.svg" alt=""></button>
+              <ul class="nav-dropdown-list nav-desktop__dropdown-list  list">
+                <li class="nav-sub-item"> Connect</li>
+
+                <li class="nav-sub-item"> Contact</li>
+                <li class="nav-sub-item"> Newsletter</li>
+                <li class="nav-sub-item"> LinkedIn</li>
               </ul>
             </li>
 
-            <li>
-              <h2 class="nav__item">Careers</h2>
-              <ul class="nav__dropdown-list">
-                <li class="nav__sub-item"> Connect</li>
 
-                <li class="nav__sub-item"> Contact</li>
-                <li class="nav__sub-item"> Newsletter</li>
-                <li class="nav__sub-item"> LinkedIn</li>
-              </ul>
-            </li>
 
 
           </ul>
-          <a> Login</A>
-          <button> Sign Up</button>
+          <div class="nav-desktop-container">
+            <button class="button button--white"> Login</button>
+            <button class="header__button button"> Sign Up</button>
+          </div>
         </nav>
 
       </div>
       <nav class="nav-mobile">
         <ul class="nav-mobile__list list ">
           <li class="nav-mobile__item">
-            <button class="nav__dropdown-button"> Product <img class="nav__icon" src="./images/icon-arrow-dark.svg"
+            <button class="nav-dropdown-button"> Product <img class="nav-icon" src="./images/icon-arrow-dark.svg"
                 alt=""></button>
             </button>
-            <ul class="nav__dropdown-list list">
-              <li class="nav__sub-item"> Overview</li>
-              <li class="nav__sub-item"> Pricing</li>
-              <li class="nav__sub-item"> Marketplace</li>
-              <li class="nav__sub-item"> Features</li>
-              <li class="nav__sub-item"> Integrations</li>
+            <ul class="nav-dropdown-list list">
+              <li class="nav-sub-item"> Overview</li>
+              <li class="nav-sub-item"> Pricing</li>
+              <li class="nav-sub-item"> Marketplace</li>
+              <li class="nav-sub-item"> Features</li>
+              <li class="nav-sub-item"> Integrations</li>
             </ul>
           </li>
 
           <li class="nav-mobile__item">
-            <button class="nav__dropdown-button"> Company <img class="nav__icon" src="./images/icon-arrow-dark.svg"
+            <button class="nav-dropdown-button"> Company <img class="nav-icon" src="./images/icon-arrow-dark.svg"
                 alt=""></button>
-            <ul class="nav__dropdown-list list">
-              <li class="nav__sub-item"> About</li>
-              <li class="nav__sub-item"> Team</li>
-              <li class="nav__sub-item"> Blog</li>
+            <ul class="nav-dropdown-list list">
+              <li class="nav-sub-item"> About</li>
+              <li class="nav-sub-item"> Team</li>
+              <li class="nav-sub-item"> Blog</li>
             </ul>
           </li>
 
           <li class="nav-mobile__item">
-            <button class="nav__dropdown-button">Careers <img class="nav__icon" src="./images/icon-arrow-dark.svg"
+            <button class="nav-dropdown-button">Careers <img class="nav-icon" src="./images/icon-arrow-dark.svg"
                 alt=""></button>
-            <ul class="nav__dropdown-list list">
-              <li class="nav__sub-item"> Connect</li>
+            <ul class="nav-dropdown-list list">
+              <li class="nav-sub-item"> Connect</li>
 
-              <li class="nav__sub-item"> Contact</li>
-              <li class="nav__sub-item"> Newsletter</li>
-              <li class="nav__sub-item"> LinkedIn</li>
+              <li class="nav-sub-item"> Contact</li>
+              <li class="nav-sub-item"> Newsletter</li>
+              <li class="nav-sub-item"> LinkedIn</li>
             </ul>
           </li>
           <li class="nav-mobile__container">
             <button class="nav-mobile__button button"> Login</button>
-            <button class="nav-mobile__button nav__button button"> Sign Up</button>
+            <button class="nav-mobile__button nav-button button"> Sign Up</button>
           </li>
 
 

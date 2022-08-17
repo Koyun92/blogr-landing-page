@@ -29,6 +29,9 @@ body {
   cursor: pointer;
   padding: 0.5em 1em;
   border-radius: 2em;
+  &--white {
+    color: $White;
+  }
 }
 .header {
   height: 70vh;
@@ -85,10 +88,7 @@ body {
 }
 
 .nav {
-  &--desktop {
-    display: none;
-  }
-  &__button {
+  &-button {
     background: rgb(255, 143, 112);
     background: linear-gradient(
       93deg,
@@ -98,14 +98,14 @@ body {
     );
     color: $White;
   }
-  &__icon {
+  &-icon {
     margin-left: 0.5em;
     transition: 0.3s;
     &--rotate {
       transform: rotate(180deg);
     }
   }
-  &__dropdown-button {
+  &-dropdown-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ body {
     font-weight: 700;
     padding: 0.5em 1em;
   }
-  &__dropdown-list {
+  &-dropdown-list {
     height: 0;
     border-radius: 1rem;
     width: 100%;
@@ -128,7 +128,7 @@ body {
       height: fit-content;
     }
   }
-  &__sub-item {
+  &-sub-item {
     cursor: pointer;
     margin: 1em 0;
     color: $Very-dark-grayish-blue;
@@ -140,7 +140,9 @@ body {
     }
   }
 }
-
+.nav-desktop {
+  display: none;
+}
 .nav-mobile {
   &__list {
     display: none;
@@ -185,6 +187,16 @@ body {
   display: block;
 }
 @media (min-width: 992px) {
+  .nav {
+    &-dropdown-button {
+      font-size: 1.5rem;
+      padding: 0 1em;
+    }
+    &-dropdown-list {
+      position: absolute;
+      top: 4rem;
+    }
+  }
   .wrapper {
     max-width: 1200px;
     right: 0;
@@ -198,6 +210,26 @@ body {
     display: none;
   }
   .nav-desktop {
+    color: $White;
+    font-size: 1rem;
+    flex-grow: 1;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6em;
+    &__list {
+      display: flex;
+    }
+    &__item {
+      width: auto;
+      position: relative;
+    }
+    &__dropdown-list {
+      width: auto;
+      border-radius: 0px;
+      padding: 0em 2em;
+      font-size: 1.5em;
+      background-color: $White;
+    }
   }
 }
