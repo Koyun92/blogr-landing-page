@@ -16,9 +16,13 @@ body {
   &--full-height {
     height: 100%;
   }
+  &--1600px {
+    max-width: 1600px;
+    margin: auto;
+  }
 }
 .active {
-  display: block;
+  display: block !important;
 }
 .list {
   list-style: none;
@@ -204,6 +208,10 @@ body {
   &__heading {
     margin-bottom: 2rem;
   }
+  &__copy {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -269,6 +277,32 @@ body {
       padding: 0em 2em;
       font-size: 1.5em;
       background-color: $White;
+    }
+  }
+  .feature {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0;
+    text-align: left;
+
+    &__picture {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    &__image {
+      position: absolute;
+      top: 50%;
+      width: 70%;
+      height: auto;
+      right: -10%;
+      transform: translateY(-50%);
+    }
+    &__copy {
+      margin-left: 0 10rem;
+      width: 80%;
     }
   }
 }

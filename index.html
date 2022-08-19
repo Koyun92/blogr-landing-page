@@ -17,7 +17,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header wrapper--1600px">
     <div class="wrapper wrapper--relative wrapper--full-height">
       <div class="header__container">
         <img class="header__logo" src="images/logo.svg" alt="logo firmy">
@@ -125,12 +125,12 @@
     </div>
   </header>
 
-  <main class="main wrapper">
-    <h2 class="main__heading"> Designed for the future</h2>
-    <article class="feature">
-      <picture>
-        <source media="(max-width: 799px)" srcset="./images/illustration-editor-mobile.svg">
-        <source media="(min-width: 800px)" srcset="./images/illustration-editor-desktop.svg">
+  <main class="main">
+    <h2 class="main__heading  wrapper"> Designed for the future</h2>
+    <article class="feature wrapper--1600px ">
+      <picture class="feature__picture">
+        <source media="(max-width: 991px)" srcset="./images/illustration-editor-mobile.svg">
+        <source media="(min-width: 992px)" srcset="./images/illustration-editor-desktop.svg">
         <img class="feature__image" src="./images/illustration-editor-mobile.svg" alt="ilustracja aplikacji">
       </picture>
 
@@ -144,7 +144,7 @@
         </p>
       </section>
 
-      <section class="feature__element">
+      <section class="feature__element ">
         <h3 class="feature__heading"> Robust content management</h3>
         <p class="feature__copy">
           Flexible content management enables users to easily move through posts. Increase the usability of your blog
@@ -153,16 +153,18 @@
       </section>
     </article>
     <article class="extra-feature">
-      <h2 class="main__heading"> State of the Art Infrastructure</h2>
-      <p class="extra-feature__copy">
-        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-      </p>
+      <div class="wrapper">
+        <h2 class="main__heading"> State of the Art Infrastructure</h2>
+        <p class="extra-feature__copy">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
     </article>
-    <article class="feature">
-      <picture>
-        <source media="(max-width: 799px)" srcset="./images/illustration-laptop-mobile.svg">
-        <source media="(min-width: 800px)" srcset="./images/illustration-laptop-desktop.svg">
+    <article class="feature wrapper--1600px">
+      <picture class="feature__picture">
+        <source media="(max-width: 991px)" srcset="./images/illustration-laptop-mobile.svg">
+        <source media="(min-width: 992px)" srcset="./images/illustration-laptop-desktop.svg">
         <img class="feature__image" src="./images/illustration-laptop-mobile.svg" alt="ilustracja laptopa">
       </picture>
 
