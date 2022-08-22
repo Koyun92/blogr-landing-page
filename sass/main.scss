@@ -5,6 +5,22 @@
 body {
   background-color: $White;
 }
+.main {
+  text-align: center;
+  margin-top: 8rem;
+  overflow: hidden;
+  &__heading {
+    margin-bottom: 4rem;
+    color: $Very-dark-blue;
+    &--white {
+      color: $White;
+    }
+  }
+}
+.radius-l-r-b-t {
+  border-bottom-right-radius: 8rem;
+  border-top-left-radius: 8rem;
+}
 .wrapper {
   max-width: 700px;
   padding: 1em 2em;
@@ -16,13 +32,19 @@ body {
   &--full-height {
     height: 100%;
   }
-  &--1600px {
+  &--1400px {
     max-width: 1400px;
     margin: auto;
   }
 }
 .active {
   display: block !important;
+}
+.link {
+  text-decoration: none;
+  &--white {
+    color: $White;
+  }
 }
 .list {
   list-style: none;
@@ -40,7 +62,8 @@ body {
 }
 .header {
   height: 70vh;
-  min-height: 500px;
+  min-height: 50rem;
+  max-height: 70rem;
 
   background: rgb(255, 143, 112);
   background: linear-gradient(
@@ -188,15 +211,7 @@ body {
     margin: 1em 0;
   }
 }
-.main {
-  text-align: center;
-  margin-top: 8rem;
-  overflow: hidden;
-  &__heading {
-    margin-bottom: 4rem;
-    color: $Very-dark-blue;
-  }
-}
+
 .feature {
   display: grid;
   grid-gap: 4rem;
@@ -214,7 +229,69 @@ body {
     margin: auto;
   }
 }
+.extra-feature {
+  display: grid;
+  margin: 14rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 28rem 1fr;
+  height: 60rem;
+  color: $White;
+  background-color: $Very-dark-gray-blue;
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: 50% -200%;
+  background-repeat: no-repeat;
+  background-size: 50rem;
 
+  &__copy {
+    width: 80%;
+    margin: auto;
+  }
+  &__img-box {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 30rem;
+  }
+  &__info {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  &__heading {
+    font-size: 4rem;
+  }
+}
+.footer {
+  color: $White;
+  background-color: black;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  &__column {
+    margin: 2em 0;
+  }
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+  &__list-item {
+    padding: 0.3em;
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
 @media (min-width: 992px) {
   .nav {
     &-dropdown-button {
@@ -330,6 +407,49 @@ body {
     &__copy {
       margin-left: 0 10rem;
       width: 100%;
+    }
+  }
+  .extra-feature {
+    display: grid;
+    margin: 14rem auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 40rem;
+    align-items: center;
+
+    background-position: -40% 100%;
+    background-repeat: no-repeat;
+    background-size: 100rem;
+
+    &__copy {
+      width: 80%;
+      margin: 0;
+    }
+    &__img-box {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+    &__img {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 40rem;
+    }
+    &__info {
+      text-align: start;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      margin-top: 0;
+    }
+    &__heading {
+      font-size: 4rem;
+    }
+  }
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+    &__logo {
+      margin-top: 2em;
     }
   }
 }
